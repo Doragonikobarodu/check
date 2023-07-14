@@ -6,21 +6,9 @@
     <title>Document</title>
 </head>
 
-<script>
-function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  else {return true;}
-}
-</script>
 <body>
-    <form name="myForm" action="/landing.html" onsubmit="return validateForm()" method="post">
-        Name: <input type="text" name="fname">
-        <input type="submit" value="Submit">
-    </form>
+    <h2>Are you named Cheryl?</h2> 
+    <button onclick = "window.location.href='landing.html';" col = "blue">Yes</button>
 </body>
 </html>
 
